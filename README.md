@@ -2,7 +2,7 @@
 ## Project Overview
 This project aims to analyze the impact of the introduction of the Video Assistant Referee (VAR) system on home advantage in football. By comparing data such as home-win rates, goals, and referee decisions across the top five European leagues and the Turkish Süper Lig between the 2014–2015 and 2024–2025 seasons, the study investigates how VAR has influenced league dynamics specific to home-field advantage. The purpose is to identify whether the presence of VAR has reduced referee bias and changed psychological or fairness-related aspects of football matches.
 ## Motivation
-VAR represents one of the most significant technological shifts in football. As football is a globally influential sport, understanding how this system has affected the game is both culturally and analytically valuable. Therefore, this project seeks to reveal VAR’s effectiveness in reshaping the psychological and referee-based patterns that have traditionally favored home teams.
+VAR represents one of the most significant technological shifts in football. As football is a globally influential sport, understanding how this system has affected the game is both culturally and analytically valuable. Therefore, this project seeks to reveal VAR’s effectiveness in reshaping the patterns that have traditionally favored home teams.
 ## Research Questions
 * Has home advantage decreased since the introduction of VAR?
 	* Has there been a significant decline in home-win rates following the implementation of VAR?
@@ -28,7 +28,7 @@ Included variables:<br/>
 
 **2- Club Football Match Data (2000 – 2025) – Kaggle:** An open dataset from Kaggle, containing match-level data across many leagues and seasons.  
 
-Included variables:<br/>  
+Included variables:  
 	- Fouls awarded and conceded (home / away)  
 	- Yellow cards awarded and conceded (home / away)  
 	- Red cards awarded and conceded (home / away)  
@@ -39,7 +39,7 @@ Included variables:<br/>
 ## Data Collection and Data Analysis Plan
 ### Data Collection
 - **Dataset 1:** Downloading team and season-level data separately and merging them properly into the main dataset.
-- **Dataset 2:** Converting match-level data to the season level for each team.
+- **Dataset 2:** Downloading match-level data and converting them to the season level for each team.
 - **Cleaning and Standardizing:** Aligning column names, formats, and variable types and applying necessary numeric conversions.
 - **Missing Values:** Attempting to obtain missing information from external sources and, if not possible, considering methods such as interpolation or exclusion.
 - **Merging:** Combining all data using a unique season–team identifier to construct the primary analysis table.
@@ -55,13 +55,14 @@ Included variables:<br/>
 - Comparing the effect of VAR across different leagues.
 - Determining in which leagues the change is more noticeable.
 ## Estimated Sample Data
-After the required datasets are cleaned, merged, and adapted to the project, the dataset is expected to look as follows. (This table is a simplified preview created for illustration purposes, and all values are hypothetical.)
-|id   |team             |country|league        |season_start|season_end|home_w|xg_home|pen_h|≈49|
+After the required datasets are cleaned, merged, and adapted to the project, the dataset is expected to look as follows (*this table is a simplified and condensed preview created for illustration purposes, and all values are hypothetical*):
+|id   |team             |country|league        |season_start|season_end|home_w|xg_h|pen_h|≈49|
 |-----|-----------------|-------|--------------|------------|----------|------|-------|-----|---|
 |1    |Beşiktaş         |Türkiye|Süper Lig     |2014        |2015      |17    |11     |4    |…  |
 |2    |Real Madrid      |Spain  |La Liga       |2014        |2015      |19    |16     |2    |…  |
 |…    |…                |…      |…             |…           |…         |…     |…      |…    |…  |
 |≈1281|Manchester United|England|Premier League|2024        |2025      |19    |11     |5    |…  |
+
 ### Glossary
 - **id:** Unique team–season identifier number.  
 - **team:** Name of the football club.  
