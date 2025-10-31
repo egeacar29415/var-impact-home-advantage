@@ -13,7 +13,7 @@ VAR represents one of the most significant technological shifts in football. As 
 ## Datasets  
 The datasets for this project will be obtained from the following publicly available sources:
 
-**1- StatHead by Sports Reference:** A comprehensive football statistics platform providing season, team and match-level data. 
+**1- StatHead by Sports Reference:** A comprehensive football statistics platform providing season, team and match-level data (accessed via subscription). 
 
 Included variables:<br/>
 	- Home and away match counts  
