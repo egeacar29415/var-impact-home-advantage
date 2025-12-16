@@ -105,7 +105,7 @@ After the required datasets are cleaned, merged, and adapted to the project, the
   - Both models perform similarly, suggesting limited nonlinear effects.
 - Regression
   - Target: Home points per match.
-  - Linear regression achieves R² ≈ 0.91, indicating strong explanatory power.
+  - Linear regression achieves R² ≈ 0.91, indicating strong explanatory power. (MAE ≈ 0.12, MSE ≈ 0.02)
   - Match performance indicators explain a large portion of variance in home performance.
 ### Overall Interpretation
 Results indicate that home advantage declines slightly after VAR introduction, but the effect size remains modest and varies across leagues. Home advantage persists and is partially predictable.
