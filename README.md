@@ -83,3 +83,29 @@ After the required datasets are cleaned, merged, and adapted to the project, the
 - Challenges: Some older seasons may have data gaps, and fully isolating VAR’s effect may be difficult due to other factors like crowd presence or the COVID-19 seasons.
 - Future Work: Future research could include more leagues and additional metrics for a broader perspective.
 - Ethical Considerations: All data sources and methods will be transparently documented. Ethical sensitivity will be maintained when interpreting results involving referee behavior.
+## Results
+### Exploratory Data Analysis
+- Dataset consists of 1281 team-season observations across six leagues between 2014-15 and 2024-25.
+- Average home wins show a small decline after VAR implementation.
+- Referee-related indicators do not show a strong or consistent directional shift favoring or disadvantaging home teams.
+- A composite Home Advantage Index remains similar in distribution before and after VAR, with league-specific variation.
+- Away xG increases slightly in the post-VAR period, narrowing the home-away chance quality gap.
+### Hypothesis Testing
+- Independent samples t-tests show statistically significant but small declines in:
+  - Home wins
+  - Home win rate
+  - Home points per match
+- The Home Advantage Index decreases from pre-VAR to post-VAR (p < 0.001), indicating a modest reduction in overall home advantage.
+- The correlation between home advantage and final league position remains weak and negative in both the pre-VAR and post-VAR periods.
+### Machine Learning
+- Classification
+  - Task: Predict whether a team exhibits home advantage in a season.
+  - Models: Logistic Regression, Random Forest.
+  - Accuracy: approximately 81-82 percent.
+  - Both models perform similarly, suggesting limited nonlinear effects.
+- Regression
+  - Target: Home points per match.
+  - Linear regression achieves R² ≈ 0.91, indicating strong explanatory power.
+  - Match performance indicators explain a large portion of variance in home performance.
+### Overall Interpretation
+Results indicate that home advantage declines slightly after VAR introduction, but the effect size remains modest and varies across leagues. Home advantage persists and is partially predictable.
