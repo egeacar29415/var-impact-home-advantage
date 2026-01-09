@@ -56,7 +56,7 @@ Included variables:
 - Determining in which leagues the change is more noticeable.
 ## Estimated Sample Data
 After the required datasets are cleaned, merged, and adapted to the project, the dataset is expected to look as follows (*this table is a simplified and condensed preview created for illustration purposes, and all values are hypothetical*):
-|id   |team             |country|league        |season_start|season_end|home_w|xg_h|pen_h|≈49|
+|id   |team             |country|league        |season_start|season_end|home_w|xg_h|pen_h|≈51|
 |-----|-----------------|-------|--------------|------------|----------|------|-------|-----|---|
 |1    |Beşiktaş         |Türkiye|Süper Lig     |2014        |2015      |17    |11     |4    |…  |
 |2    |Real Madrid      |Spain  |La Liga       |2014        |2015      |19    |16     |2    |…  |
@@ -73,7 +73,7 @@ After the required datasets are cleaned, merged, and adapted to the project, the
 - **home_w:** Number of matches won when playing at home.  
 - **xg_h:** Average xG per match at home.  
 - **pen_h:** Number of penalties awarded in favor of the club at home.  
-- **Dataset Size:** The complete dataset is expected to contain ≈1281 rows and ≈49 columns after preprocessing.
+- **Dataset Size:** The complete dataset is expected to contain ≈1281 rows and ≈51 columns after preprocessing.
 ## Expected Findings
 * Home advantage is expected to have declined after VAR, with measurable decreases in performance indicators such as home-win rates, home points, and xG.
 * Referee decisions such as penalties, fouls, and cards are likely to be more balanced between home and away teams.
